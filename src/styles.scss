@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove list styles on ul, ol elements */
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  /* Remove focus outline on some elements */
+  a,
+  button,
+  input,
+  textarea {
+    outline: none;
+  }
+  
+  /* Set base font and line-height */
+  body {
+    line-height: 1.5;
+    /* aparentemente isso libera algumas fun��es de certas fontes. Coloquei pra testar (n�o vi diferen�a) */
+    /* https://twitter.com/ericvna/status/1697997486684610975?t=JmnSv_x9Y_KYBHD9a8tZeg&s=08 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "cv11", "salt", "ss01", "ss03", "cv01", "cv02", "cv03",
+      "cv04", "cv05", "cv06", "cv09", "cv10";
+  }
+  
+  /* Reset some default HTML5 styling */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+  
+  /* Ensure images don't overflow the container */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  * {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+  }
+  
+  * h2 {
+    font-weight: 500;
+  }
+  
+  html,
+  body {
+      height: 100%;
+    }
+    body {
+        margin: 0;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+    }
+    
+    .glow {
+        mask-composite: intersect;
+        mask-clip: padding-box, border-box;
+        mask: linear-gradient(#0000, #0000),
+        conic-gradient(#0000 0deg, #ffff, #0000 45deg);
+    }
+    
+    
+    :root {
+      --purple: #383dca;
+      --yellow: #ffd740;
+    }
