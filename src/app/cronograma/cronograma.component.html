@@ -1,21 +1,9 @@
-
-<mat-form-field class="demo-inline-calendar-card">
-    <mat-label>Escolha uma data</mat-label>
-    <input matInput [matDatepicker]="picker">
-    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-  </mat-form-field>
-
 <section class="cronograma">
-    <h2>Meu Cronograma de Estudos</h2>
-    
-    <div class="schedule">
-      <div class="schedule-item" *ngFor="let item of cronograma">
-        <h3>{{ item.titulo }}</h3>
-        <p>{{ item.descricao }}</p>
-        <span>{{ item.data | date:'dd/MM/yyyy' }}</span>
-      </div>
-    </div>
-  
-    <button class="add-item-btn">Adicionar Tarefa</button>
+  <h2>Cronograma</h2>
 </section>
+
+<div class="centered-container">
+  <mat-card class="demo-inline-calendar-card custom-calendar-card">
+    <mat-calendar [(selected)]="selected" (selectedChange)="onDateSelected($event)"></mat-calendar>
+  </mat-card>
+</div>

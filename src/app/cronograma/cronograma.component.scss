@@ -58,15 +58,67 @@
   }
 }
 
-.demo-inline-calendar-card {
-  padding: 2rem;
-  max-width: 400px; // Defina a largura máxima que você deseja
-  margin: 0 auto; // Centraliza o calendário na tela
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-  mat-calendar {
-    width: 100%; // Garante que o calendário use a largura máxima do contêiner
-    height: auto; // Ajusta a altura automaticamente
-  }
+.centered-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo-inline-calendar-card {
+  width: 500px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0; /* Fundo suave para a página */
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-calendar-card {
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 15px; /* Bordas arredondadas */
+  background-color: #ffffff; /* Fundo branco */
+  transition: transform 0.3s ease;
+}
+
+.custom-calendar-card:hover {
+  transform: scale(1.05); /* Leve efeito de aumento ao passar o mouse */
+}
+
+mat-calendar {
+  width: 100%; /* Faz o calendário ocupar toda a largura disponível */
+}
+
+.mat-calendar-table {
+  border-radius: 10px; /* Arredonda as bordas da tabela do calendário */
+}
+
+.mat-calendar-body-cell {
+  border-radius: 50%; /* Arredonda as células individuais */
+  transition: background-color 0.3s ease;
+}
+
+.mat-calendar-body-cell:hover {
+  background-color: #f0f8ff; /* Cor de destaque ao passar o mouse */
+}
+
+.mat-calendar-body-selected {
+  background-color: #3f51b5; /* Cor de fundo para a data selecionada */
+  color: white; /* Texto em branco para a data selecionada */
 }
 
 
