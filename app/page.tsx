@@ -1,12 +1,12 @@
-import { DefaultSidebar } from "./components/siderbar";
+"use client"
+import { AppSidebar } from "./components/app-sidebar";
+import { MainPage } from "./pages/main-page";
 
 export default function Home() {
   return (
     <div className="flex">
-      <DefaultSidebar />
-      {/* <main className="flex-1">
-        <Component {...pageProps} />
-      </main> */}
+      <AppSidebar/>
+    <MainPage/>
     </div>
   );
 }
